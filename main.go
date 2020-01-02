@@ -42,7 +42,7 @@ func main() {
 		_, _ = w.Write([]byte("\r\n"))
 	})
 
-	rootHandler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Radequest) {
+	rootHandler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		_, _ = w.Write([]byte("Aloha!!!\r\n"))
 	})
 
