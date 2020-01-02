@@ -41,28 +41,29 @@ func NewPrometheusMiddleware(registry * prometheus.Registry) *PrometheusMiddlewa
 	}
 }
 
-type metricResponseWriter struct {
+type customResponseWriter struct {
 	http.ResponseWriter
 	statusCode int
 }
 
-func NewMetricResponseWriter(w http.ResponseWriter) *metricResponseWriter {
-	return &metricResponseWriter{w, http.StatusOK}
+func NewCustomResponseWriter(w http.ResponseWriter) *customResponseWriter {
+	return &customResponseWriter{w, http.StatusOK}
 }
 
-func (lrw *metricResponseWriter) WriteHeader(code int) {
-	lrw.statusCode = code
-	lrw.ResponseWriter.WriteHeader(code)
+// overwrite http.ResponseWriter().WriteHeader(...
+func (cw *customResponseWriter) WriteHeader(code int) {
+	cw.statusCode = code
+	cw.ResponseWriter.WriteHeader(code)
 }
 
 func (p *PrometheusMiddleware) Handler(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		begin := time.Now()
 		path := urlToLabel(r.RequestURI)
-		mw := NewMetricResponseWriter(w)
-		next.ServeHTTP(mw, r)
+		cw := NewCustomResponseWriter(w)
+		next.ServeHTTP(cw, r)
 		var (
-			status = strconv.Itoa(mw.statusCode)
+			status = strconv.Itoa(cw.statusCode)
 			took   = time.Since(begin)
 		)
 		p.Histogram.WithLabelValues(r.Method, path, status).Observe(took.Seconds())
