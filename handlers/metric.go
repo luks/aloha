@@ -41,18 +41,16 @@ func NewPrometheusMiddleware(registry * prometheus.Registry) *PrometheusMiddlewa
 	}
 }
 
-type loggingResponseWriter struct {
+type metricResponseWriter struct {
 	http.ResponseWriter
 	statusCode int
 }
 
-func NewLoggingResponseWriter(w http.ResponseWriter) *loggingResponseWriter {
-	// WriteHeader(int) is not called if our response implicitly returns 200 OK, so
-	// we default to that status code.
-	return &loggingResponseWriter{w, http.StatusOK}
+func NewMetricResponseWriter(w http.ResponseWriter) *metricResponseWriter {
+	return &metricResponseWriter{w, http.StatusOK}
 }
 
-func (lrw *loggingResponseWriter) WriteHeader(code int) {
+func (lrw *metricResponseWriter) WriteHeader(code int) {
 	lrw.statusCode = code
 	lrw.ResponseWriter.WriteHeader(code)
 }
@@ -61,10 +59,10 @@ func (p *PrometheusMiddleware) Handler(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		begin := time.Now()
 		path := urlToLabel(r.RequestURI)
-		lrw := NewLoggingResponseWriter(w)
-		next.ServeHTTP(lrw, r)
+		mw := NewMetricResponseWriter(w)
+		next.ServeHTTP(mw, r)
 		var (
-			status = strconv.Itoa(lrw.statusCode)
+			status = strconv.Itoa(mw.statusCode)
 			took   = time.Since(begin)
 		)
 		p.Histogram.WithLabelValues(r.Method, path, status).Observe(took.Seconds())
