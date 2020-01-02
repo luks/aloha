@@ -10,7 +10,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
-var version = "1.3.0"
+var version = "1.4.0"
 var port = ":8090"
 
 func main() {
