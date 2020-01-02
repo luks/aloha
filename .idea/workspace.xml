@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b70cfc3-dfb6-4a7e-96ec-e39c9b9bfdae" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../.." />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1VnXWGyb6l4lJR5J3x0lKrbIPrS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/healt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build health.go">
+    <configuration name="go build health.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="aloha" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/handlers/health.go" />
+      <package value="github.com/lukapiske/aloha" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHealthCheckHandlerHappyPath in github.com/aloha" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="aloha" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aloha" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestHealthCheckHandlerHappyPath$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHealthOK in github.com/aloha" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="aloha" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aloha" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestHealthOK$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHealthPath in github.com/aloha" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="aloha" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aloha" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestHealthPath$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build health.go" />
+        <item itemvalue="Go Test.TestHealthOK in github.com/aloha" />
+        <item itemvalue="Go Test.TestHealthPath in github.com/aloha" />
+        <item itemvalue="Go Test.TestHealthCheckHandlerHappyPath in github.com/aloha" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="576" y="214" width="800" height="677" key="#GOROOT" timestamp="1577915094202">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="576" y="214" width="800" height="677" key="#GOROOT/43.27.1877.1053@43.27.1877.1053" timestamp="1577915094202" />
+    <state x="576" y="214" width="800" height="677" key="#Go_Modules_(vgo)" timestamp="1577915153282">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="576" y="214" width="800" height="677" key="#Go_Modules_(vgo)/43.27.1877.1053@43.27.1877.1053" timestamp="1577915153282" />
+    <state x="2612" y="344" width="568" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577889872242">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2612" y="344" width="568" height="390" key="#com.intellij.fileTypes.FileTypeChooser/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577889872242" />
+    <state x="655" y="181" width="642" height="742" key="#go_build_health.go" timestamp="1577915276072">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="655" y="181" width="642" height="742" key="#go_build_health.go/43.27.1877.1053@43.27.1877.1053" timestamp="1577915276072" />
+    <state x="759" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577915189089">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="759" y="310" width="424" height="484" key="FileChooserDialogImpl/43.27.1877.1053@43.27.1877.1053" timestamp="1577915189089" />
+    <state width="1831" height="278" key="GridCell.Tab.0.bottom" timestamp="1577924296222">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state width="1831" height="287" key="GridCell.Tab.0.bottom/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577894674202" />
+    <state width="1831" height="278" key="GridCell.Tab.0.bottom/43.27.1877.1053@43.27.1877.1053" timestamp="1577924296222" />
+    <state width="1831" height="278" key="GridCell.Tab.0.center" timestamp="1577924296221">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state width="1831" height="287" key="GridCell.Tab.0.center/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577894674201" />
+    <state width="1831" height="278" key="GridCell.Tab.0.center/43.27.1877.1053@43.27.1877.1053" timestamp="1577924296221" />
+    <state width="1831" height="278" key="GridCell.Tab.0.left" timestamp="1577924296221">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state width="1831" height="287" key="GridCell.Tab.0.left/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577894674201" />
+    <state width="1831" height="278" key="GridCell.Tab.0.left/43.27.1877.1053@43.27.1877.1053" timestamp="1577924296221" />
+    <state width="1831" height="278" key="GridCell.Tab.0.right" timestamp="1577924296222">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state width="1831" height="287" key="GridCell.Tab.0.right/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577894674201" />
+    <state width="1831" height="278" key="GridCell.Tab.0.right/43.27.1877.1053@43.27.1877.1053" timestamp="1577924296222" />
+    <state x="2390" y="174" key="SettingsEditor" timestamp="1577971508466">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2390" y="174" key="SettingsEditor/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577971508466" />
+    <state x="502" y="197" key="SettingsEditor/43.27.1877.1053@43.27.1877.1053" timestamp="1577915196112" />
+    <state x="2511" y="153" width="770" height="772" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577896614579">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2511" y="153" width="770" height="772" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/43.27.1877.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577896614579" />
+  </component>
+</project>
