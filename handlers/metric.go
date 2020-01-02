@@ -82,4 +82,3 @@ func urlToLabel(path string) string {
 	}
 	return result
 }
-
