@@ -6,18 +6,17 @@ import (
 	"sync/atomic"
 	"time"
 	"github.com/lukapiske/aloha/handlers"
-	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
-var version = "1.4.1"
+var version = "1.5.0"
 var port = ":8090"
 
 func main() {
 
 	log.Print("Starting Aloha!!!")
-	registry := prometheus.NewRegistry()
-	prom := handlers.NewPrometheusMiddleware(registry)
+
+	prom := handlers.NewPrometheusMiddleware()
 
 	isReady := &atomic.Value{}
 	isReady.Store(false)
@@ -66,7 +65,7 @@ func main() {
 
 	http.Handle("/", prom.Handler(rootHandler))
 	http.Handle("/version", prom.Handler(versionHandler))
-	http.Handle("/metrics", promhttp.HandlerFor(registry, promhttp.HandlerOpts{}))
+	http.Handle("/metrics", promhttp.HandlerFor(prom.Registry, promhttp.HandlerOpts{}))
 
 	log.Print("Listening on port " + port)
 

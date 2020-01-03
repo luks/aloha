@@ -12,9 +12,10 @@ import (
 type PrometheusMiddleware struct {
 	Histogram *prometheus.HistogramVec
 	Counter   *prometheus.CounterVec
+	Registry  *prometheus.Registry
 }
 
-func NewPrometheusMiddleware(registry * prometheus.Registry) *PrometheusMiddleware {
+func NewPrometheusMiddleware() *PrometheusMiddleware {
 
 	histogram := prometheus.NewHistogramVec(prometheus.HistogramOpts{
 		Subsystem: "aloha",
@@ -32,12 +33,15 @@ func NewPrometheusMiddleware(registry * prometheus.Registry) *PrometheusMiddlewa
 		[]string{"status"},
 	)
 
+	registry := prometheus.NewRegistry()
+
 	registry.MustRegister(histogram)
 	registry.MustRegister(counter)
 
 	return &PrometheusMiddleware{
 		Histogram: histogram,
 		Counter:   counter,
+		Registry: registry,
 	}
 }
 
